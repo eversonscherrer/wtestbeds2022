@@ -32,14 +32,14 @@ interface template1
 int lo0
  vrf for v1
  ipv4 addr 20.20.20.2 /32
- ipv6 addr 2020::2 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+ ipv6 addr 2020::2 /128
  exit
 !
 interface ethernet1
- description Router2@Int_Ethernet1 -> Router1@Int_Ethernet1
+ description r2@eth1 -> r1@eth1
  vrf forwarding v1
- ipv4 address 1.1.1.2 2255.255.255.0
- ipv6 address 1111::2 ffff:ffff:ffff:ffff::
+ ipv4 address 1.1.1.2 /24
+ ipv6 address 1111::2 /64
  template template1
  router ospf6 1 enable
  no shutdown
@@ -47,10 +47,10 @@ interface ethernet1
  exit
 !
 interface ethernet2
- description Router2@Int_Ethernet2 -> Router3@Int_Ethernet2
+ description r2@eth2 -> r3@eth2
  vrf forwarding v1
- ipv4 address 2.2.2.1 255.255.255.0
- ipv6 address 2222::1 ffff:ffff:ffff:ffff::
+ ipv4 address 2.2.2.1 /24
+ ipv6 address 2222::1 /64
  template template1
  router ospf6 1 enable
  no shutdown
@@ -58,27 +58,15 @@ interface ethernet2
  exit
 !
 interface ethernet3
- description Router2@Int_Ethernet3 -> Router4@Int_Ethernet1
+ description r2@eth3 -> r4@eth1
  vrf forwarding v1
- ipv4 address 3.3.3.2 255.255.255.0
- ipv6 address 3333::2 ffff:ffff:ffff:ffff::
+ ipv4 address 3.3.3.2 /24
+ ipv6 address 3333::2 /64
  template template1
  router ospf6 1 enable
  no shutdown
  no log-link-change
  exit
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
 !
 server telnet tel
  security protocol telnet
@@ -90,6 +78,5 @@ server telnet tel
  login logging
  vrf v1
  exit
-!
 !
 end
