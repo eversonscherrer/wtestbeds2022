@@ -39,7 +39,7 @@ Now it's time to run the topology, to run it, download all the hardware and soft
 
 **Note**
 
-## Quotes > Blockquotes To orchestrate the execution of the topology we use tmux, if you don't have it installed, remember to install it.
+## Quotes > Blockquotes To orchestrate the execution of the topology we use tmux, if you don't have it installed, remember to install it.>
 
 
 
