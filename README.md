@@ -13,8 +13,6 @@ For demonstration purposes, the Debian-based Linux installation was chosen.
 ```console
 #sudo apt-get install default-jre-headless --no-install-recommends
 ```
-### Windows
-In order to install the Windows version of Java, you need to visit the official Java website and download the Windows executable. After the download, check if your user has permission to install and perform the installation through the graphical environment. 
 
 ### MacOS
 ```console
@@ -25,5 +23,15 @@ sdk install java 17.0.2-open
 sdk default java 17.0.2-open
 java -version
 ```
+
+### Windows
+In order to install the Windows version of Java, you need to visit the official Java website and download the Windows executable. After the download, check if your user has permission to install and perform the installation through the graphical environment. 
+
+## Install Freertr
+The freeRouter homepage is at freertr.net. Starting from this page, you'll find various resources such as source code (there is also a GitHub mirror), binaries, and other images that might be of your interest. From there we just download the freeRouter jar files.
+
+```console
+#wget freertr.net/rtr.jar
+````
 
 
