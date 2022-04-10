@@ -34,4 +34,8 @@ The freeRouter homepage is at freertr.net. Starting from this page, you'll find 
 #wget freertr.net/rtr.jar
 ````
 
+# Launch the Topology
+Now it's time to run the topology, to execute it, download all the hardware and software files that are in the repository, in the same folder.
+
+
 
