@@ -38,24 +38,61 @@ The freeRouter homepage is at freertr.net. Starting from this page, you'll find 
 Now it's time to run the topology, to run it, download all the hardware and software files that are in the repository, in the same folder.
 
 **NOTE**
-> To orchestrate the execution of the topology we use tmux, if you don't have it installed, remember to install it.
+> To orchestrate the execution of the topology we use ```tmux```, if you don't have it installed, remember to install it.
 ```console
 sudo apte-get install tmux
 ````
 
-## First Step
-Edit the star_topology.sh file.
+# Full Mesh Topology
+
+[full_mesh (1).pdf](https://github.com/eversonscherrer/wtestbeds2022/files/8458246/full_mesh.1.pdf)
+
+
+## To run topology
+Edit the ```star-topology.sh``` file.
 ```console
-vim start_topology.sh
+vim start-topology.sh
 ````
 This file has two environment variables ```$STR``` and ```$HWSW```, add the path according to your operating system.
 
+### Run
+```console
+./start-topology
 
+```
+# Troubleshooting
 
+## Accessing by Telnet 
+To access routers by telnet use ```telnet <ip address> <port>```.
 
+For Example:
+Accessing Router R1
 
+```console
+telnet 127.0.0.1 1123
+````
 
+## Verifying the interfaces is working on router r1
 
+```console
+R1# Show interfaces summary
+````
 
+## Visualizing route table r1
+```console
+R1# show ipv4 route v1
+````
+
+## Testing connectivity between R1 to R3
+
+```console
+R1# ping 6.6.6.1 /vrf v1
+````
+
+## Verifying trace between R1 to R3
+
+```console
+R1# traceroute 6.6.6.1 /vrf v1
+````
 
 
