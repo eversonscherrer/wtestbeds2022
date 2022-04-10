@@ -45,7 +45,7 @@ sudo apte-get install tmux
 
 # Full Mesh Topology
 
-[full_mesh (1).pdf](https://github.com/eversonscherrer/wtestbeds2022/files/8458246/full_mesh.1.pdf)
+![wtestbeds](https://user-images.githubusercontent.com/56919528/162601454-0ba62c51-5d74-40b5-8507-03c1e59f7d6d.png)
 
 
 ## To run topology
