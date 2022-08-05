@@ -88,13 +88,13 @@ R1# show ipv4 route v1
 ## Testing connectivity between R1 to R3
 
 ```console
-R1# ping 6.6.6.1 /vrf v1
+R1# ping 6.6.6.1 vrf v1
 ````
 
 ## Verifying trace between R1 to R3
 
 ```console
-R1# traceroute 6.6.6.1 /vrf v1
+R1# traceroute 6.6.6.1 vrf v1
 ````
 
 ## This is our presentation
