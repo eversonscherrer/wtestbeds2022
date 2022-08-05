@@ -106,7 +106,7 @@ R1# traceroute 6.6.6.1 /vrf v1
 
 Bibtex:
 
-bibtex
+```bibtex
 @inproceedings{wtestbeds,
  author = {Everson Borges and Edgard Pontes and Csaba Mate and Frederic Loui and Magnos Martinello and Moisés Ribeiro},
  title = {FreeRouter in a Nutshell: A "Protocoland" routing platform for Open and Portable Carrier-Class Testbeds},
@@ -119,5 +119,5 @@ bibtex
  doi = {10.5753/wtestbeds.2022.223341},
  url = {https://sol.sbc.org.br/index.php/wtestbeds/article/view/20752}
 }
-
+````
 
