@@ -99,12 +99,14 @@ R1# traceroute 6.6.6.1 /vrf v1
 
 ## This is our presentation
 
-![wtestbeds](/Users/everson/wtestbeds2022/FreeRouter in a Nutshell_ A “Protocoland” routing platform for Open and Portable Carrier-Class Testbeds.pdf)
+![pdf](https://github.com/eversonscherrer/wtestbeds2022/blob/main/FreeRouter%20in%20a%20Nutshell_%20A%20%E2%80%9CProtocoland%E2%80%9D%20routing%20platform%20for%20Open%20and%20Portable%20Carrier-Class%20Testbeds.pdf)
 
 
-## If you are interested in quoting bibtex
+## Cite this work
 
-```console
+Bibtex:
+
+bibtex
 @inproceedings{wtestbeds,
  author = {Everson Borges and Edgard Pontes and Csaba Mate and Frederic Loui and Magnos Martinello and Moisés Ribeiro},
  title = {FreeRouter in a Nutshell: A "Protocoland" routing platform for Open and Portable Carrier-Class Testbeds},
@@ -117,6 +119,5 @@ R1# traceroute 6.6.6.1 /vrf v1
  doi = {10.5753/wtestbeds.2022.223341},
  url = {https://sol.sbc.org.br/index.php/wtestbeds/article/view/20752}
 }
-````
 
 
